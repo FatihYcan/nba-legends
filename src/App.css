@@ -1,38 +1,114 @@
-.App {
+.logo {
+  margin-top: 1rem;
+}
+
+.header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-top: 0.3rem;
+  font-size: 3rem;
+  background: -webkit-linear-gradient(
+    90deg,
+    #0000ff 30%,
+    #ffffff 50%,
+    #ff0000 30%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input {
+  width: 45%;
+  padding: 1rem;
+  margin-top: 0.3rem;
+  background-color: #0000ff;
+  background-image: linear-gradient(
+    90deg,
+    #0000ff 0%,
+    #ffffff 50%,
+    #ff0000 95%
+  );
+  border: 2px solid #0000ff 0%, #ffffff 50%, #ff0000 95%;
+  border-radius: 0.8rem;
+  font-size: 1rem;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.img {
+  width: 300px;
+  height: 350px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img:hover {
+  transform: scale(0.9);
+}
+
+h2 {
+  background-color: white;
+  padding: 0.5rem;
+  margin-top: -5px;
+  width: 100%;
+  border-top: 2px solid gray;
+  text-align: center;
+}
+
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin: 1rem 4rem 1rem 4rem;
+  border-radius: 1rem;
+  background-image: url("https://i.pinimg.com/originals/24/86/51/2486517534aa0b0d175c18c343e50d82.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 85%;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 1rem;
+}
+
+.ul {
+  width: 300px;
+  height: 350px;
+  cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
